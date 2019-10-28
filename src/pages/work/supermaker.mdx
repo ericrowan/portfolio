@@ -1,0 +1,221 @@
+import Image from './../../components/Image';
+import { Flex, Box, Heading, Text } from 'rebass';
+import { Global, css } from '@emotion/core';
+import { Link } from 'gatsby';
+import Container from './../../components/Container';
+import { sizes, colors } from './../../utils/variables';
+
+<Global
+  // TODO: Fix this shit! It should be using ThemeProvider
+  styles={css`
+    html {
+      background: ${colors.supermaker.mint};
+    }
+    *,
+    a {
+      color: ${colors.supermaker.black};
+    }
+  `}
+/>
+
+<Container text>
+
+# Supermaker
+
+Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
+
+Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Design Concepts
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full grid sx={{
+  // px: 4,
+}}>
+
+![Style tiles](../../images/supermaker/style-tiles-2a.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-4a.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-3a.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-3b.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-4c.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-4b.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-4d.jpg)
+
+![Style tiles](../../images/supermaker/style-tiles-3c.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Prototyping
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container width={sizes.large}>
+
+![Screenshot](../../images/supermaker/prototype-ux.png)
+
+![Screenshot](../../images/supermaker/prototype-sitemap.png)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Design system
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container width={[1, 3 / 4]}>
+
+![Colors graphic](../../images/supermaker/colorways.jpg)
+
+![Typography graphic](../../images/supermaker/typography-1.jpg)
+
+![Typography graphic](../../images/supermaker/typography-2.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Flexible Heroes
+
+The podcast landing page was in need of a revamp. Here are some shots that
+didn't make the cut. This is just placeholder text.
+
+</Container>
+
+<Container full grid sx={{
+  px: 4,
+  // display: 'grid',
+  // gridTemplateColumns: '1fr 1fr',
+  // gridGap: 4,
+}}>
+
+![Hero image](../../images/supermaker/hero-1.jpg)
+
+![Hero image](../../images/supermaker/hero-2.jpg)
+
+![Hero image](../../images/supermaker/hero-3.jpg)
+
+![Hero image](../../images/supermaker/hero-4.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Collections
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container width={sizes.medium}>
+
+![Collection](../../images/supermaker/view-collections.jpg)
+
+![Collection](../../images/supermaker/view-collection.jpg)
+
+![Collection](../../images/supermaker/view-collection-2.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Homepage
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full grid>
+
+![Homepage designs](../../images/supermaker/homepage-1.jpg)
+
+<Box>
+
+![Homepage designs](../../images/supermaker/homepage-2.jpg)
+
+</Box>
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Discovery
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container width={[1, 1 / 2]}>
+
+![Discovery graphic](../../images/supermaker/view-directory.jpg)
+
+![Discovery graphic](../../images/supermaker/view-topics.jpg)
+
+![Discovery graphic](../../images/supermaker/view-contributors.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Article layout
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full grid>
+
+![Article layout](../../images/supermaker/article-1.jpg)
+
+![Article layout](../../images/supermaker/article-2.jpg)
+
+</Container>
+
+<!-- /// NEXT PROJECT \\\ -->
+
+<Container text>
+
+**Next project:**
+
+<Link to='/work/touchstone'>
+
+# Touchstone
+
+</Link>
+
+</Container>

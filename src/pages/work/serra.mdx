@@ -1,0 +1,53 @@
+import Image from './../../components/Image';
+import { Flex, Box, Heading, Text } from 'rebass';
+import { Global, css } from '@emotion/core';
+import { Link } from 'gatsby';
+import Container from './../../components/Container';
+import { sizes, colors } from './../../utils/variables';
+
+<Global
+  // TODO: Fix this shit! It should be using ThemeProvider
+  styles={css`
+    html {
+      background: ${colors.serra.blue};
+    }
+    *,
+    a {
+      color: ${colors.serra.white};
+    }
+  `}
+/>
+
+<Container text>
+
+# Serra
+
+Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
+
+Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+
+</Container>
+
+<Container width={sizes.large}>
+
+![Homepage layout](../../images/serra/wholesale-page-1.jpg)
+
+![Homepage layout](../../images/serra/wholesale-page-2.jpg)
+
+![Homepage layout](../../images/serra/wholesale-page-3.jpg)
+
+</Container>
+
+<!-- /// NEXT PROJECT \\\ -->
+
+<Container text>
+
+**Next project:**
+
+<Link to='/work/siteworks'>
+
+# Siteworks
+
+</Link>
+
+</Container>

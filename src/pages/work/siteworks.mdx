@@ -1,0 +1,82 @@
+import Image from './../../components/Image';
+import { Flex, Box, Heading, Text } from 'rebass';
+import { Global, css } from '@emotion/core';
+import { Link } from 'gatsby';
+import Container from './../../components/Container';
+import { sizes, colors } from './../../utils/variables';
+
+<Global
+  // TODO: Fix this shit! It should be using ThemeProvider
+  styles={css`
+    html {
+      background: ${colors.siteworks.darkgray};
+    }
+    body {
+      background-image: url('../../src/images/siteworks/map-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+    *,
+    a {
+      color: ${colors.siteworks.orange};
+    }
+  `}
+/>
+
+<Container text>
+
+# Siteworks
+
+Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
+
+Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+
+</Container>
+
+<Container width={sizes.large}>
+
+![Homepage](../../images/siteworks/homepage.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Interactive map
+
+The podcast landing page was in need of a revamp. Here are some shots that
+didn't make the cut. This is just placeholder text.
+
+</Container>
+
+<Container full>
+
+<Box width={[1, 2 / 3]}>
+
+![Map design](../../images/siteworks/map-1.png)
+
+</Box>
+
+<Box width={[1, 2 / 3]} ml='auto'>
+
+![Map design](../../images/siteworks/map-2.png)
+
+</Box>
+
+</Container>
+
+<!-- /// NEXT PROJECT \\\ -->
+
+<Container text>
+
+**Next project:**
+
+<Link to='/work/human-shapes'>
+
+# Human Shapes
+
+</Link>
+
+</Container>

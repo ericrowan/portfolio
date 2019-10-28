@@ -1,0 +1,102 @@
+import { Link } from "gatsby"
+import { Flex, Box, Heading, Text } from "rebass"
+import Project from "./../components/Project"
+import Container from "./../components/Container"
+
+import { sizes, colors } from "./../utils/variables"
+
+<!-- TODO: SEO -->
+
+<Container text>
+  <Text fontSize={32}>
+    Helping bring ideas to life on the web for over a decade. Product designer,
+    art director, and front-end engineerish. <Link to="/about">Read more</Link>{" "}
+    or <a href="mailto:eric@eric.rowan.com">email me</a>.
+  </Text>
+</Container>
+
+<Container grid width={sizes.x_large} alignItems='end'>
+<Project
+  title='Changelog'
+  description='Front-end, UI/UX'
+  url='changelog'
+  background={colors.changelog.black}
+  color={colors.changelog.green}
+>
+
+![Branding options](../images/changelog/podcasts-brand.jpg)
+
+</Project>
+
+<Project
+  title='Supermaker'
+  description='Art Direction, React'
+  url='supermaker'
+  background={colors.supermaker.mint}
+  color={colors.supermaker.black}
+>
+
+![Style tiles](../images/supermaker/style-tiles-4b.jpg)
+
+</Project>
+
+<Project
+  title='Schmidt’s'
+  description='Interactive'
+  url='schmidts'
+  background={colors.schmidts.bone}
+  color={colors.schmidts.slate}
+>
+
+![Woman brushing teeth](../images/schmidts/woman-smile.jpg)
+
+</Project>
+
+<Project
+  title='Touchstone'
+  description='Front-end, UI/UX'
+  url='touchstone'
+  background={colors.touchstone.navy}
+  color={colors.touchstone.cream}
+>
+
+![Buildings](../images/touchstone/featured.jpg)
+
+</Project>
+
+<Project
+  title='Serra'
+  description='Visual'
+  url='serra'
+  background={colors.serra.blue}
+  color={colors.serra.white}
+>
+
+![Homepage layout](../images/serra/wholesale-page-3.jpg)
+
+</Project>
+
+<Project
+  title='Siteworks'
+  description='Interactive'
+  url='siteworks'
+  background={colors.siteworks.darkgray}
+  color={colors.siteworks.orange}
+>
+
+![Map design](../images/siteworks/map-2.png)
+
+</Project>
+
+<Project
+  title='HS'
+  description='Front-end, Visual'
+  url='human-shapes'
+  background={colors.humanshapes.white}
+  color={colors.humanshapes.black}
+>
+
+![Owner's Manual layout](../images/human-shapes/owners-manual-2.jpg)
+
+</Project>
+</Container>

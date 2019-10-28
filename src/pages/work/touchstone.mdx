@@ -1,0 +1,213 @@
+import Image from './../../components/Image';
+import { Flex, Box, Heading, Text } from 'rebass';
+import { Global, css } from '@emotion/core';
+import { Link } from 'gatsby';
+import Container from './../../components/Container';
+import { sizes, colors } from './../../utils/variables';
+
+<Global
+  // TODO: Fix this shit! It should be using ThemeProvider
+  styles={css`
+    html {
+      background: ${colors.touchstone.navy};
+    }
+    *,
+    a {
+      color: ${colors.touchstone.cream};
+    }
+  `}
+/>
+
+<Container text>
+
+# Touchstone
+
+Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
+
+Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+
+</Container>
+
+![Buildings](../../images/touchstone/featured.jpg)
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Design language
+
+The podcast landing page was in need of a revamp. Here are some shots that
+didn't make the cut. This is just placeholder text.
+
+</Container>
+
+<Container>
+
+![Style Guide](../../images/touchstone/style-guide.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Onboarding flow
+
+The podcast landing page was in need of a revamp. Here are some shots that
+didn't make the cut. This is just placeholder text.
+
+</Container>
+
+<Container width={sizes.large}>
+
+![Onboarding illustration](../../images/touchstone/illustrations.jpg)
+
+![Onboarding illustration](../../images/touchstone/flow.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Dashboard
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container width={sizes.large}>
+
+![Dashboard alt](../../images/touchstone/dashboard-final.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Alternate designs
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full px={4}>
+
+<Box width={[1, 2 / 3]}>
+
+![Dashboard alt](../../images/touchstone/dashboard-alt-1.jpg)
+
+</Box>
+
+<Box width={[1, 2 / 3]} mt={4} ml='auto'>
+
+![Dashboard alt](../../images/touchstone/dashboard-alt-2.jpg)
+
+</Box>
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Client/Advisor
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full grid sx={{
+  px: 4,
+}}>
+
+![Client profile](../../images/touchstone/client-profile-old.jpg)
+Before
+
+<Box mt={[0, 6]}>
+
+![Client profile](../../images/touchstone/client-profile-1.jpg)
+After
+
+</Box>
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Taking surveys
+
+The podcast landing page was in need of a revamp. Here are some shots that
+didn't make the cut. This is just placeholder text.
+
+</Container>
+
+<Container maxWidth={sizes.small}>
+
+![Survey](../../images/touchstone/survey-results-view.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Playing games
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container full grid sx={{
+  px: 4,
+  // display: 'grid',
+  // gridTemplateColumns: '1fr 1fr',
+  // gridGap: 4,
+}}>
+
+![Category Game](../../images/touchstone/category-game-1.jpg)
+
+![Category Game](../../images/touchstone/category-game-2.jpg)
+
+![Category Game](../../images/touchstone/category-game-4.jpg)
+
+![Category Game](../../images/touchstone/category-game-3.jpg)
+
+</Container>
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+## Notifications &amp; Settings
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+
+</Container>
+
+<Container>
+
+![Notifications](../../images/touchstone/advisor-notifications.jpg)
+
+![Notifications](../../images/touchstone/advisor-notifications-settings.jpg)
+
+![User settings](../../images/touchstone/user-profile.jpg)
+
+</Container>
+
+<!-- /// NEXT PROJECT \\\ -->
+
+<Container text>
+
+**Next project:**
+
+<Link to='/work/schmidts'>
+
+# Schmidt’s
+
+</Link>
+
+</Container>
