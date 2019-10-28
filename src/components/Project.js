@@ -29,13 +29,12 @@ const Project = ({
   url,
   ...props
 }) => (
-  <StyledProject className={className} backgroundColor={background}>
+  <StyledProject className={className}>
     <Link to={path + url}>
       {children}
       <Flex
         py={[1, 2, 3]}
         px={[2, 3, 4]}
-        color={color}
         sx={{
           alignItems: "baseline",
         }}
