@@ -1,18 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { Flex, Box, Text } from "rebass"
-// import { motion } from 'framer-motion';
+// import { motion } from "framer-motion"
 
 const StyledProject = styled(Box)`
   transition: all 100ms 300ms ease-in-out;
+  background: ${props => props.background};
+  padding: 1em;
 
   &:hover {
-    transform: scale(0.95);
+    transform: scale(0.9);
   }
 
   a {
+    color: ${props => props.color};
     text-decoration: none;
   }
 `
@@ -29,22 +33,20 @@ const Project = ({
   url,
   ...props
 }) => (
-  <StyledProject className={className}>
-    <Link to={path + url}>
-      {children}
-      <Flex
-        py={[1, 2, 3]}
-        px={[2, 3, 4]}
-        sx={{
-          alignItems: "baseline",
-        }}
-      >
-        <Text fontSize={[32, 36, 48]}>{title}</Text>
-        <Text fontSize={[14, 16, 20]} textAlign="right" ml="auto">
-          {description}
-        </Text>
-      </Flex>
-    </Link>
+  <StyledProject className={className} color={color} background={background}>
+    <Link to={path + url}>{children}</Link>
+    <Flex
+      py={1}
+      // px={[2, 3, 4]}
+      sx={{
+        alignItems: "baseline",
+      }}
+    >
+      <Text fontSize={[32, 36, 48]}>{title}</Text>
+      <Text fontSize={[14, 16, 20]} textAlign="right" ml="auto">
+        {description}
+      </Text>
+    </Flex>
   </StyledProject>
 )
 

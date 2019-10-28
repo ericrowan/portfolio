@@ -1,28 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { css } from '@emotion/core';
-import styled from '@emotion/styled';
-import { Box } from 'rebass';
-import { sizes } from '../utils/variables';
-import { fontWeights, space } from '../components/Theme';
+import React from "react"
+import PropTypes from "prop-types"
+import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import { Box } from "rebass"
+import { sizes } from "../utils/variables"
+// import { fontWeights, space } from "../components/Theme"
 
 const StyledContainer = styled(Box)`
   // TODO: Add Rebass spacing/breakpoints
   margin: 6em auto;
   padding: 0 2em;
-  max-width: ${props => (props.full ? '100%' : props.width) || sizes.medium};
+  max-width: ${props => (props.full ? "100%" : props.width) || sizes.medium};
   width: 100%;
-  grid-template-columns: ${props => props.gridCols || '1fr 1fr'};
-  grid-gap: ${props => props.gridGap || '1em'};
+  grid-template-columns: ${props => props.gridCols || "1fr 1fr"};
+  grid-gap: ${props => props.gridGap || "1em"};
 
   @media (max-width: ${sizes.large}) {
     grid-template-columns: 1fr !important;
     padding: 0 1.5em;
-    margin: 3em auto;
+    /* margin: 3em auto; */
   }
 
   @media (max-width: ${sizes.small}) {
-    margin: 3em auto;
     padding: 0 1em;
   }
 
@@ -41,7 +40,7 @@ const StyledContainer = styled(Box)`
     css`
       margin-top: 12em;
     `}
-`;
+`
 
 const Container = ({
   children,
@@ -54,7 +53,7 @@ const Container = ({
 }) => (
   <StyledContainer
     {...props}
-    as='section'
+    as="section"
     className={className}
     grid={grid}
     gridCols={gridCols}
@@ -63,16 +62,16 @@ const Container = ({
   >
     {children}
   </StyledContainer>
-);
+)
 
 Container.propTypes = {
   // gridCount: PropTypes.string,
   // sizes: PropTypes.shape()
-};
+}
 
 Container.defaultProps = {
   // gridCount: undefined,
   // sizes: undefined
-};
+}
 
-export default Container;
+export default Container
