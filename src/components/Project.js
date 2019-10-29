@@ -9,7 +9,6 @@ import { Flex, Box, Text } from "rebass"
 const StyledProject = styled(Box)`
   transition: all 100ms 300ms ease-in-out;
   background: ${props => props.background};
-  padding: 1em;
 
   &:hover {
     transform: scale(0.9);
@@ -36,8 +35,8 @@ const Project = ({
   <StyledProject className={className} color={color} background={background}>
     <Link to={path + url}>{children}</Link>
     <Flex
-      py={1}
-      // px={[2, 3, 4]}
+      py={(1, 2, 3)}
+      px={[2, 3, 4]}
       sx={{
         alignItems: "baseline",
       }}
