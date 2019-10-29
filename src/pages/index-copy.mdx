@@ -7,24 +7,15 @@ import { sizes, colors } from "./../utils/variables"
 
 <!-- TODO: SEO -->
 
-<Container text sx={{
-  textAlign: 'center',
-}}>
-
-### Helping bring ideas to life on the web for over a decade. Product designer, art director, and front-end engineerish.
-
+<Container text>
+  <Text fontSize={32}>
+    Helping bring ideas to life on the web for over a decade. Product designer,
+    art director, and front-end engineer-ish. <Link to="/about">Read more</Link>{" "}
+    or <a href="mailto:eric@eric.rowan.com">email me</a>.
+  </Text>
 </Container>
 
-<Box sx={{
-  maxWidth: `${sizes.large}`,
-  display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
-  gridGap: [4, 5, 6],
-  alignItems: 'end',
-  px: [3, 4, 5],
-  mx: 'auto'
-}}>
-
+<Container>
 <Project
   title='Changelog'
   description='Front-end, UI/UX'
@@ -39,7 +30,7 @@ import { sizes, colors } from "./../utils/variables"
 
 <Project
   title='Supermaker'
-  description='Visual, React'
+  description='Art Direction, React'
   url='supermaker'
   background={colors.supermaker.red}
   color={colors.supermaker.black}
@@ -108,4 +99,4 @@ import { sizes, colors } from "./../utils/variables"
 ![Owner's Manual layout](../images/human-shapes/owners-manual-2.jpg)
 
 </Project>
-</Box>
+</Container>

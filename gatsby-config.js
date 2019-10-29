@@ -2,7 +2,9 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://ericrowan.com`
+    title: `Eric Rowan`,
+    siteUrl: `https://ericrowan.com`,
+    description: `Designer and Front-end Developer`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +24,6 @@ module.exports = {
             options: {
               maxWidth: 1728,
               linkImagesToOriginal: false,
-              // disableBgImageOnAlpha: true
             }
           }
         ],
