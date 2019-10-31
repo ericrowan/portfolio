@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
       <Global
         styles={css`
           html {
-            background: #f7fdf4;
+            /* background: #f7fdf4; */
           }
           body {
             // TODO: Use scaled spacing
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
             transition: all 300ms ease-in-out;
 
             &:hover {
-              opacity: 0.33;
+              /* opacity: 0.33; */
             }
           }
           p {

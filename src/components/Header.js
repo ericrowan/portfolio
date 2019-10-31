@@ -7,8 +7,7 @@ import { sizes } from "../utils/variables"
 
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
-  margin-top: 2em;
-  position: fixed;
+  margin-top: 4em;
   top: 0;
   z-index: 1;
 
@@ -22,18 +21,13 @@ const StyledHeader = styled(Container)`
 `
 
 const Header = () => (
-  <StyledHeader width={sizes.x_large}>
+  <StyledHeader width={sizes.large}>
     <Flex>
       <Link variant="nav" to="/">
         Eric Rowan
+        <br />
+        Interactive Designer
       </Link>
-      <Box mx="auto" />
-      <Link variant="nav" to="/about">
-        Info
-      </Link>
-      <a variant="nav" href="mailto:eric@ericrowan.com">
-        Email
-      </a>
     </Flex>
   </StyledHeader>
 )
