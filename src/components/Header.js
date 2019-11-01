@@ -21,13 +21,22 @@ const StyledHeader = styled(Container)`
 `
 
 const Header = () => (
-  <StyledHeader width={sizes.large}>
+  <StyledHeader width={sizes.x_large}>
     <Flex>
-      <Link variant="nav" to="/">
-        Eric Rowan
-        <br />
-        Interactive Designer
-      </Link>
+      <Box>
+        <Link variant="nav" to="/">
+          Eric Rowan
+        </Link>
+      </Box>
+      <Box ml="auto">
+        <Link variant="nav" to="/about">
+          Work
+        </Link>
+        <Link variant="nav" to="/about">
+          Info
+        </Link>
+        <a href="mailto:eric@ericrowan.com">Email</a>
+      </Box>
     </Flex>
   </StyledHeader>
 )

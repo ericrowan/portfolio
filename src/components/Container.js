@@ -38,7 +38,7 @@ const StyledContainer = styled(Box)`
   ${({ text }) =>
     text &&
     css`
-      margin-top: 12em;
+      /* margin-top: 12em; */
     `}
 `
 
