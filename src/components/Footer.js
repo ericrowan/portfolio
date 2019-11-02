@@ -27,9 +27,10 @@ const Footer = () => (
       <Link variant="nav" to="/">
         Work
       </Link>
-      <Link variant="nav" to="/about">
+      <Link variant="nav" to="/info">
         Info
       </Link>
+      <a href="mailto:eric@ericrowan.com">Email</a>
     </Flex>
   </StyledFooter>
 )

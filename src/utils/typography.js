@@ -1,25 +1,31 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '24px',
-  baseLineHeight: 1.25,
-  scaleRatio: 4,
+  baseFontSize: "28px",
+  baseLineHeight: 1.33,
+  scaleRatio: 3.33,
   headerFontFamily: [
-    'GT Walsheim',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen-Sans",
+    "Ubuntu",
+    "Cantarell",
+    "Helvetica Neue",
+    "sans-serif",
   ],
   bodyFontFamily: [
-    'GT Walsheim',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
-  ]
-});
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen-Sans",
+    "Ubuntu",
+    "Cantarell",
+    "Helvetica Neue",
+    "sans-serif",
+  ],
+})
 
 export default typography;

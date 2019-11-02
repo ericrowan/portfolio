@@ -1,3 +1,9 @@
+---
+title: Supermaker
+bg: { colors.supermaker.red }
+fg: { colors.supermaker.black }
+---
+
 import Image from "./../../components/Image"
 import { Flex, Box, Heading, Text } from "rebass"
 import { Global, css } from "@emotion/core"
@@ -18,13 +24,11 @@ import { sizes, colors } from "./../../utils/variables"
   `}
 />
 
-<Container text>
+<Container>
 
 # Supermaker
 
-Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
-
-Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+Prototyping, visual design, and front-end development for a new editorial platform built for makers and entrepreneurs of maker companies. Tight project turnaround and small team didn&rsquo;t take away from the client&rsquo;s willingness to explore and experiement visually&mdash;bold patterns and colors&mdash;and technically&mdash;React.
 
 </Container>
 
@@ -32,15 +36,13 @@ Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet
 
 <Container text>
 
-## Design Concepts
+## Concepts and process
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+To begin the project we scoured magazines, zines, and other editorials. Mixing and matching elements, the first concepts for look-and-feel were presented.
 
 </Container>
 
-<Container full grid sx={{
-  // px: 4,
-}}>
+<Container full grid>
 
 ![Style tiles](../../images/supermaker/style-tiles-2a.jpg)
 
@@ -66,7 +68,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 ## Prototyping
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+One of the ways we were able to experiement was through UX interactions; I designed and prototyped several different visual styles and user interactions in Figma (top). Eventually, we mapped out the website (bottom) to help present our vision to the client before proceeding, we then built those experiments out using libraries such as React, Craft CMS, and styled-components.
 
 </Container>
 
@@ -84,7 +86,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 ## Design system
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+To start the project, our team worked with a brand designer which delivered basic branding elements: colors, patterns, and logo variations. Based around that we created colorways and typography options that would make each section of the website highly customizable by content editors, adhering to the visual language we helped build.
 
 </Container>
 
@@ -102,19 +104,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-## Flexible Heroes
+## Bold heroes
 
-The podcast landing page was in need of a revamp. Here are some shots that
-didn't make the cut. This is just placeholder text.
+Being the standout component of both the homepage and on every article post, we knew we had to get the hero layout just right. To do this, we created dozens of variations in layout, typeface, and color, and eventually narrowed it down to four or five standouts.
 
 </Container>
 
-<Container full grid sx={{
-  px: 4,
-  // display: 'grid',
-  // gridTemplateColumns: '1fr 1fr',
-  // gridGap: 4,
-}}>
+<Container full grid>
 
 ![Hero image](../../images/supermaker/hero-1.jpg)
 
@@ -130,9 +126,9 @@ didn't make the cut. This is just placeholder text.
 
 <Container text>
 
-## Collections
+## Topics &amp; Collections
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+Collections&mdash;articles grouped by particular type&mdash;help create an experience so that the user can discover content and help develop a stronger connection from regular readers of the website.
 
 </Container>
 
@@ -150,9 +146,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-## Homepage
+## The homepage
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+With so many options for content, layout, color, image placement, and typography, it was super important to build every component so that they could be assembled (even in ways unknown to us) in a way that was highly flexible.
 
 </Container>
 
@@ -172,9 +168,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-## Discovery
+## Found interest
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+I designed, prototyped, and helped build the components that would help the user drill down into the content they are most interested in.
+
+In addition, as this is an interactive community, we were tasked with building the ability for the client to appeal to their readership in creative, direct ways.
 
 </Container>
 
@@ -192,9 +190,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-## Article layout
+## Art-directed articles
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+Similar to many other components mentioned above, each article layout was able to be fully customized. To help keep the writing as the central focus, it was decided the article body's text and background would remain black on white.
 
 </Container>
 

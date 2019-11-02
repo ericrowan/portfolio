@@ -7,7 +7,7 @@ import { sizes } from "../utils/variables"
 
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
-  margin-top: 4em;
+  margin-top: 3em;
   top: 0;
   z-index: 1;
 
@@ -25,14 +25,15 @@ const Header = () => (
     <Flex>
       <Box>
         <Link variant="nav" to="/">
-          Eric Rowan
+          <strong>Eric Rowan</strong>
         </Link>
       </Box>
-      <Box ml="auto">
-        <Link variant="nav" to="/about">
+      <Box mx="auto"></Box>
+      <Box>
+        <Link variant="nav" to="/">
           Work
         </Link>
-        <Link variant="nav" to="/about">
+        <Link variant="nav" to="/info">
           Info
         </Link>
         <a href="mailto:eric@ericrowan.com">Email</a>

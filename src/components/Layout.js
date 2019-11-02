@@ -30,10 +30,12 @@ const Layout = ({ children }) => (
 
             &:hover {
               /* opacity: 0.33; */
+              text-decoration: underline !important;
             }
           }
           p {
             margin: 0;
+
             & + p {
               margin-top: 1em;
             }

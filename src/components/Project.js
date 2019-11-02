@@ -7,19 +7,11 @@ import { Flex, Box, Heading, Text } from "rebass"
 // import { motion } from "framer-motion"
 
 const StyledProject = styled(Box)`
-  /* background: ${props => props.background}; */
-  transition: all 100ms 300ms ease-in-out;
-
   a {
-    /* color: ${props => props.color}; */
     text-decoration: none;
 
     &:hover {
-      /* opacity: 1; */
-    }
-
-    &:hover & img {
-      opacity: 1;
+      text-decoration: underline;
     }
   }
 `
