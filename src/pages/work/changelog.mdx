@@ -1,9 +1,15 @@
-import Image from './../../components/Image';
-import { Flex, Box, Heading, Text } from 'rebass';
-import { Global, css } from '@emotion/core';
-import { Link } from 'gatsby';
-import Container from './../../components/Container';
-import { sizes, colors } from './../../utils/variables';
+---
+title: Changelog
+bg: { colors.changelog.black }
+fg: { colors.changelog.green }
+---
+
+import Image from "./../../components/Image"
+import { Flex, Box, Heading, Text } from "rebass"
+import { Global, css } from "@emotion/core"
+import { Link } from "gatsby"
+import Container from "./../../components/Container"
+import { sizes, colors } from "./../../utils/variables"
 
 <Global
   // TODO: Fix this shit! It should be using ThemeProvider
@@ -18,13 +24,11 @@ import { sizes, colors } from './../../utils/variables';
   `}
 />
 
-<Container text>
+<Container>
 
 # Changelog
 
-Developer community based around podcasts and news discussions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa? Corporis in soluta, quisquam aliquid velit quae dolor sint asperiores iste doloribus!
-
-Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident saepe aut ipsa incidunt culpa?
+Branding, visual design, and front-end development for a podcasting startup targed at a tightknit community of developers. Over the course of several months, I collaborated with a small team internally and externally to continue pushing an already well-established brand&rsquo;s look and feel forward.
 
 </Container>
 
@@ -40,8 +44,7 @@ Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet
 
 ## Podcast heroes
 
-The podcast landing page was in need of a revamp. Here are some shots that
-didn't make the cut. This is just placeholder text.
+Tasked with refining the podcast pages and heroes. My goal was to bring focus to actionable items, enhance visual appeal of the podcast artwork, and boost importance of community member avatars.
 
 </Container>
 
@@ -61,9 +64,9 @@ didn't make the cut. This is just placeholder text.
 
 <Container text>
 
-## News upgrade
+## Upgraded layouts
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+The original news and blog post layout was great, but it didn&rsquo;t allow for rich media content such as video and audio embedding.
 
 </Container>
 
@@ -73,9 +76,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-### And something else!
+## Improved comments
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+I helped design and build a new comment thread, allowing for the use of Markdown and, crucially, emojis.
 
 </Container>
 
@@ -87,17 +90,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 <Container text>
 
-## Weekly newsletter
+## Redesigned newsletter
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesentium animi deleniti perspiciatis pariatur maxime rem amet illo inventore labore provident?
+Changelog reaches much of its community via opt-in emails. We wanted to draw attention to latest podcast episodes, as well
 
 </Container>
 
 <Container full grid>
 
-![Changelog Weekly (new)](../../images/changelog/weekly-old.jpg)
+<Box>
 
-![Changelog Weekly (new)](../../images/changelog/weekly.jpg)
+![Changelog Weekly](../../images/changelog/weekly-old.jpg)
+
+<small>Original layout</small>
+
+</Box>
+
+<Box>
+
+![Changelog Weekly](../../images/changelog/weekly-alt.jpg)
+
+<small>Proposed layout</small>
+
+</Box>
 
 </Container>
 
@@ -107,9 +122,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo nihil, praesen
 
 **Next project:**
 
-<Link to='/work/supermaker'>
+<Link to='/work/schmidts'>
 
-# Supermaker
+# Schmidt&rsquo;s
 
 </Link>
 
