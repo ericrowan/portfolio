@@ -13,16 +13,18 @@ const Layout = ({ children }) => (
       <Global
         styles={css`
           html {
-            /* background: #f7fdf4; */
+            font-size: calc(18px + 0.1vw);
           }
           body {
-            // TODO: Use scaled spacing
-            font-size: calc(
-              16px + (24 - 16) * ((100vw - 300px) / (1600 - 300))
-            );
             max-width: ${sizes.x_large};
             margin: 0 auto;
             color: black;
+          }
+          h1 {
+            @media screen and (max-width: 36em) {
+              /* font-size: calc(21px + 1vw); */
+              hyphens: auto !important;
+            }
           }
           a {
             color: black;
@@ -37,11 +39,12 @@ const Layout = ({ children }) => (
             margin: 0;
 
             & + p {
-              margin-top: 1em;
+              margin-top: 1.5em;
             }
           }
           main {
             margin-bottom: auto;
+            margin-top: 10vmax;
           }
         `}
       />
