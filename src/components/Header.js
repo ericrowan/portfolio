@@ -7,7 +7,8 @@ import { sizes } from "../utils/variables"
 
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
-  margin-top: 3em;
+  position: fixed;
+  margin-top: 4vmax;
   top: 0;
   z-index: 1;
 

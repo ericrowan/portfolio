@@ -8,21 +8,15 @@ import { sizes } from "../utils/variables"
 
 const StyledContainer = styled(Box)`
   // TODO: Add Rebass spacing/breakpoints
-  margin: 4em auto;
-  padding: 0 2em;
+  margin: 6vmax auto;
+  padding: 0 4vmax;
   max-width: ${props => (props.full ? "100%" : props.width) || sizes.medium};
   width: 100%;
   grid-template-columns: ${props => props.gridCols || "1fr 1fr"};
-  grid-gap: ${props => props.gridGap || "1em"};
+  grid-gap: ${props => props.gridGap || "1.5em"};
 
   @media (max-width: ${sizes.large}) {
     grid-template-columns: 1fr !important;
-    padding: 0 1.5em;
-    /* margin: 3em auto; */
-  }
-
-  @media (max-width: ${sizes.small}) {
-    padding: 0 1em;
   }
 
   ${({ grid }) =>
@@ -38,7 +32,7 @@ const StyledContainer = styled(Box)`
   ${({ text }) =>
     text &&
     css`
-      margin-top: 12em;
+      margin-top: 12vmax;
     `}
 `
 

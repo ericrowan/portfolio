@@ -18,7 +18,7 @@ import { sizes, colors } from "./../../utils/variables"
   `}
 />
 
-<Container text>
+<Container>
 
 # Schmidt&rsquo;s
 
@@ -28,7 +28,7 @@ I lead the design on several projects while working with Schmid&rsquo;s, includi
 
 </Container>
 
-<Box width={sizes.medium} mx='auto'>
+<Box maxWidth={sizes.medium} mx='auto'>
 
 ![Woman brushing teeth](../../images/schmidts/woman-smile.jpg)
 
@@ -44,7 +44,7 @@ The client requested new search functionality that would help the user make sens
 
 </Container>
 
-<Container width={sizes.small} mx='auto'>
+<Container width={sizes.medium} mx='auto'>
 
 <!-- TODO: Re-export images to fix transparent bg -->
 
@@ -100,12 +100,11 @@ To solve this, we built features to allow content editors to set positioning opt
 
 <Container>
 
-The podcast landing page was in need of a revamp. Here are some shots that
-didn't make the cut. This is just placeholder text.
+We also provided options for responsive layouts.
 
 </Container>
 
-<Container full grid gridCols='repeat(4, 1fr)'>
+<Container grid width={sizes.large}>
 
 ![Mobile designs](../../images/schmidts/mobile-1.jpg)
 
