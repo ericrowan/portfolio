@@ -22,7 +22,7 @@ const Footer = () => (
     <Flex fontSize={3}>
       <Text>&copy; Eric Rowan</Text>
       <Box mx="auto" />
-      <Text>Oakland, Calif.</Text>
+      <Text display={["none", "block"]}>Oakland, Calif.</Text>
       <Box mx="auto" />
       <Link variant="nav" to="/">
         Work
