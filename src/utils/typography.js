@@ -3,6 +3,7 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: "21px",
   baseLineHeight: 1.5,
+  headerLineHeight: 1.33,
   scaleRatio: 3,
   headerFontFamily: [
     "-apple-system",

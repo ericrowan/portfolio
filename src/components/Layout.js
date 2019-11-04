@@ -31,9 +31,22 @@ const Layout = ({ children }) => (
           p {
             margin: 0;
 
-            & + p {
+            & + p,
+            & + h1,
+            & + h2,
+            & + h3,
+            & + h4,
+            & + h5,
+            & + h6,
+            & + hr {
               margin-top: 1.5em;
             }
+          }
+          hr {
+            height: 0;
+            background: transparent;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
           }
           main {
             margin-bottom: auto;
