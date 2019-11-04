@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Flex, Box } from "rebass"
+import { Flex, Box, Heading } from "rebass"
 import Container from "./../components/Container"
 import { sizes } from "../utils/variables"
 
@@ -22,7 +22,7 @@ const StyledHeader = styled(Container)`
 
 const Header = () => (
   <StyledHeader width={sizes.xlarge}>
-    <Flex fontSize={3}>
+    <Flex fontSize={[2, 3]}>
       <Box>
         <Link variant="nav" to="/">
           <strong>Eric Rowan</strong>
