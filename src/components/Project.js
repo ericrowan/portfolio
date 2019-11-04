@@ -12,7 +12,7 @@ const StyledProject = styled(Box)`
     text-decoration: none !important;
   }
 
-  div {
+  article {
     transition: all 50ms ease-in-out;
 
     &:hover {
@@ -35,13 +35,13 @@ const Project = ({
 }) => (
   <StyledProject className={className} color={color} background={background}>
     <Link to={path + url}>
-      <div>
+      <article>
         {children}
         <Box mt={3}>
           <Heading fontSize={[5]}>{title}</Heading>
           <Text fontSize={[3]}>{description}</Text>
         </Box>
-      </div>
+      </article>
     </Link>
   </StyledProject>
 )
