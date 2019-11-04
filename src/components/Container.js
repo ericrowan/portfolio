@@ -8,7 +8,7 @@ import { sizes } from "../utils/variables"
 
 const StyledContainer = styled(Box)`
   // TODO: Add Rebass spacing/breakpoints
-  margin: 4vmax auto;
+  margin: 6vmax auto;
   padding: 0 4vmax;
   max-width: ${props => (props.full ? "100%" : props.width) || sizes.small};
   width: 100%;
@@ -32,7 +32,7 @@ const StyledContainer = styled(Box)`
   ${({ text }) =>
     text &&
     css`
-      margin-top: 8vmax;
+      margin-top: 12vmax;
     `}
 `
 
