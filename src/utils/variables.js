@@ -1,8 +1,9 @@
 export const sizes = {
-  small: '32em',
-  medium: '40em',
-  large: '64em',
-  x_large: '80em'
+  xsmall: '32em',
+  small: '40em',
+  medium: '48em',
+  large: '72em',
+  xlarge: '96em'
 };
 
 export const colors = {

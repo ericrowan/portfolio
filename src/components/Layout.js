@@ -13,25 +13,18 @@ const Layout = ({ children }) => (
       <Global
         styles={css`
           html {
-            font-size: calc(18px + 0.1vw);
+            font-size: calc(16px + 0.33vw);
           }
           body {
-            max-width: ${sizes.x_large};
+            max-width: ${sizes.xlarge};
             margin: 0 auto;
             color: black;
-          }
-          h1 {
-            @media screen and (max-width: 36em) {
-              /* font-size: calc(21px + 1vw); */
-              hyphens: auto !important;
-            }
           }
           a {
             color: black;
             transition: all 300ms ease-in-out;
 
             &:hover {
-              /* opacity: 0.33; */
               text-decoration: underline !important;
             }
           }

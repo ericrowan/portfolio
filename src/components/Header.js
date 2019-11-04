@@ -8,22 +8,21 @@ import { sizes } from "../utils/variables"
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
   position: fixed;
-  margin-top: 4vmax;
-  top: 0;
+  margin-top: 2vmax;
   z-index: 1;
 
   a {
     text-decoration: none;
 
     &:not(:first-of-type) {
-      margin-left: 1em;
+      margin-left: 1.5em;
     }
   }
 `
 
 const Header = () => (
-  <StyledHeader width={sizes.x_large}>
-    <Flex>
+  <StyledHeader width={sizes.xlarge}>
+    <Flex fontSize={3}>
       <Box>
         <Link variant="nav" to="/">
           <strong>Eric Rowan</strong>

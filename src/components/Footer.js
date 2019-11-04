@@ -6,20 +6,20 @@ import Container from "./../components/Container"
 import { sizes } from "../utils/variables"
 
 const StyledFooter = styled(Container)`
-  margin: 3em auto;
+  margin: 12vmax auto 3vmax;
 
   a {
     text-decoration: none;
 
     &:not(:first-of-type) {
-      margin-left: 1em;
+      margin-left: 1.5em;
     }
   }
 `
 
 const Footer = () => (
-  <StyledFooter as="footer" width={sizes.x_large}>
-    <Flex>
+  <StyledFooter as="footer" width={sizes.xlarge}>
+    <Flex fontSize={3}>
       <Text>&copy; Eric Rowan</Text>
       <Box mx="auto" />
       <Text>Oakland, Calif.</Text>

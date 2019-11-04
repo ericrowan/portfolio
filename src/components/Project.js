@@ -7,11 +7,16 @@ import { Flex, Box, Heading, Text } from "rebass"
 // import { motion } from "framer-motion"
 
 const StyledProject = styled(Box)`
-  a {
-    text-decoration: none;
+  a,
+  a:hover {
+    text-decoration: none !important;
+  }
+
+  div {
+    transition: all 50ms ease-in-out;
 
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.1);
     }
   }
 `
@@ -30,11 +35,13 @@ const Project = ({
 }) => (
   <StyledProject className={className} color={color} background={background}>
     <Link to={path + url}>
-      <div>{children}</div>
-      <Box mt={3}>
-        <Heading fontSize={[32, 36, 48]}>{title}</Heading>
-        <Text fontSize={[18, 21, 24]}>{description}</Text>
-      </Box>
+      <div>
+        {children}
+        <Box mt={3}>
+          <Heading fontSize={[5]}>{title}</Heading>
+          <Text fontSize={[3]}>{description}</Text>
+        </Box>
+      </div>
     </Link>
   </StyledProject>
 )
