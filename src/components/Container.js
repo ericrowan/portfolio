@@ -25,7 +25,7 @@ const StyledContainer = styled(Box)`
       display: grid;
 
       p {
-        margin: 0;
+        /* margin: 0; */
       }
     `}
 
