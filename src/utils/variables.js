@@ -7,6 +7,10 @@ export const sizes = {
 };
 
 export const colors = {
+  eric: {
+    black: '#121212',
+    white: '#FFFFFF'
+  },
   changelog: {
     green: '#59B287',
     black: '#101820',
