@@ -30,17 +30,17 @@ import { sizes, colors } from "./../../utils/variables"
 
 Prototyping, visual design, and front-end development for a new editorial platform built for makers and entrepreneurs of maker companies. Tight project turnaround and small team didn&rsquo;t take away from the client&rsquo;s willingness to explore and experiement visually&mdash;bold patterns and colors&mdash;and technically&mdash;React.
 
-[See live](https://supermaker.com/) &#8594;
+[View live](https://supermaker.com/) &#8594;
 
 </Container>
 
 <Container full grid>
 
-<Box alignSelf='center' mx='auto' color={colors.supermaker.white} maxWidth={sizes.small} px={'8vmax'}>
+<Box alignSelf='center' mx={[0, 'auto']} px={[0, 0, '4vmin']} maxWidth={['100%', sizes.xsmall]} mb={[2, 0]}>
 
 ### Early mockups
 
-We scoured magazines and other editorials for inspiration and ideas. Mixing and matching elements, the first concepts for look-and-feel were presented.
+We scoured print magazines and other editorials for inspiration and ideas. Mixing and matching elements, the first concepts for look-and-feel were presented.
 
 </Box>
 
@@ -132,7 +132,7 @@ Collections&mdash;articles grouped by particular type&mdash;help create an exper
 
 </Container>
 
-<Container width={sizes.medium}>
+<Container full grid gridCols={'repeat(3, 1fr)'}>
 
 ![Collection](../../images/supermaker/view-collections.jpg)
 
@@ -176,13 +176,13 @@ In addition, as this is an interactive community, we were tasked with building t
 
 </Container>
 
-<Container width={[1, 1 / 2]}>
+<Container grid full gridCols={'repeat(3, 1fr)'}>
+
+![Discovery graphic](../../images/supermaker/view-contributors.jpg)
 
 ![Discovery graphic](../../images/supermaker/view-directory.jpg)
 
 ![Discovery graphic](../../images/supermaker/view-topics.jpg)
-
-![Discovery graphic](../../images/supermaker/view-contributors.jpg)
 
 </Container>
 
@@ -193,8 +193,6 @@ In addition, as this is an interactive community, we were tasked with building t
 ## Art-directed articles
 
 Similar to many other components mentioned above, each article layout was able to be fully customized. To help keep the writing as the central focus, it was decided the article body's text and background would remain black on white.
-
-[See live](https://supermaker.com/).
 
 </Container>
 

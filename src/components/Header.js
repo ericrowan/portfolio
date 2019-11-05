@@ -7,9 +7,7 @@ import { sizes } from "../utils/variables"
 
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
-  position: fixed;
-  margin-top: 2vmax;
-  z-index: 1;
+  margin: 1.5em auto;
 
   a {
     text-decoration: none;

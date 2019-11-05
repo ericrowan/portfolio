@@ -51,7 +51,6 @@ const Layout = ({ children }) => (
           }
           main {
             margin-bottom: auto;
-            margin-top: 10vmax;
           }
         `}
       />

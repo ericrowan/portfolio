@@ -1,7 +1,7 @@
 export const sizes = {
   xsmall: '32em',
   small: '40em',
-  medium: '48em',
+  medium: '52em',
   large: '72em',
   xlarge: '96em'
 };
