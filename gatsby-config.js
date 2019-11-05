@@ -15,7 +15,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
