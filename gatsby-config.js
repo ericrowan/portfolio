@@ -2,9 +2,12 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Eric Rowan`,
-    siteUrl: `https://ericrowan.com`,
-    description: `Designer and Front-end Developer`
+    title: "Eric Rowan",
+    titleTemplate: "%s | Design & Front-end",
+    description:
+      "I design and build websites, apps, ideas, and other useful tools.",
+    url: "https://ericrowan.com", // No trailing slash allowed!
+    image: "/images/portrait.jpg", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +16,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-netlify`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -24,32 +27,32 @@ module.exports = {
             options: {
               maxWidth: 1920,
               linkImagesToOriginal: false,
-            }
-          }
+            },
+          },
         ],
         defaultLayouts: {
-          default: require.resolve(`./src/components/Layout.js`)
-        }
-      }
+          default: require.resolve(`./src/components/Layout.js`),
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `./src/utils/typography.js`
-      }
+        pathToConfigModule: `./src/utils/typography.js`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID'
-      }
-    }
-  ]
-};
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+      },
+    },
+  ],
+}
