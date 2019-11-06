@@ -6,7 +6,7 @@ import Container from "./../components/Container"
 import { sizes } from "../utils/variables"
 
 const StyledFooter = styled(Container)`
-  margin: 12vmax auto 3vmax;
+  margin: 12vmax auto 4vmax;
 
   a {
     text-decoration: none;
