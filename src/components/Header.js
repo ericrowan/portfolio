@@ -16,7 +16,7 @@ const Header = () => (
   <StyledHeader width={sizes.xlarge}>
     <Flex flexDirection={["column", "row"]} alignItems="baseline">
       <Link variant="nav" to="/">
-        <Heading as="h1" fontSize={[2, 3]}>
+        <Heading as="h1" fontSize={[2, 3]} mb={[1, 0]}>
           Eric Rowan
         </Heading>
       </Link>
