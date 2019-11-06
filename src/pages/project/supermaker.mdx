@@ -31,7 +31,9 @@ Prototyping, visual design, and front-end development for a new editorial platfo
 
 </Container>
 
-<Container full grid backgroundColor={colors.supermaker.red}>
+<Container full grid backgroundColor={colors.supermaker.white} sx={{
+  paddingY: '4vmax !important'
+}}>
 
 <Box alignSelf='center' mx={[0, 'auto']} maxWidth={['100%', sizes.xsmall]} mb={[2, 0]}>
 
@@ -101,7 +103,7 @@ Being the standout component of both the homepage and on every article post, we 
 
 </Container>
 
-<Container full grid>
+<Container grid width={sizes.large}>
 
 ![Hero image](../../images/supermaker/hero-1.jpg)
 
@@ -117,17 +119,18 @@ Being the standout component of both the homepage and on every article post, we 
 
 <Container text>
 
-## Topics &amp; Collections
+## Topics and collections
 
-Collections&mdash;articles grouped by particular type&mdash;help create an experience so that the user can discover content and help develop a stronger connection from regular readers of the website.
+Collections &mdash; articles grouped by particular type &mdash; help create an experience so that the user can discover content and help develop a stronger connection from regular readers of the website.
 
 </Container>
 
-<Container full grid gridCols={'repeat(3, 1fr)'}>
+<Container grid width={sizes.large} sx={{
+  padding: '2em !important',
+  backgroundColor: `${colors.supermaker.blue}`,
+}}>
 
 ![Collection](../../images/supermaker/view-collections.jpg)
-
-![Collection](../../images/supermaker/view-collection.jpg)
 
 ![Collection](../../images/supermaker/view-collection-2.jpg)
 
@@ -159,7 +162,7 @@ With so many options for content, layout, color, image placement, and typography
 
 <Container text>
 
-## Found interest
+## Discovery
 
 I designed, prototyped, and helped build the components that would help the user drill down into the content they are most interested in.
 
@@ -167,7 +170,10 @@ In addition, as this is an interactive community, we were tasked with building t
 
 </Container>
 
-<Container grid full gridCols={'repeat(3, 1fr)'}>
+<Container grid gridCols={'repeat(3, 1fr)'} width={sizes.large} sx={{
+  padding: '2em !important',
+  backgroundColor: `${colors.supermaker.red}`,
+}}>
 
 ![Discovery graphic](../../images/supermaker/view-contributors.jpg)
 

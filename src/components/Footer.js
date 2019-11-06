@@ -11,8 +11,8 @@ const StyledFooter = styled(Container)`
   a {
     text-decoration: none;
 
-    &:not(:first-of-type) {
-      margin-left: 1.5em;
+    &:hover {
+      text-decoration: underline;
     }
   }
 `
@@ -25,12 +25,14 @@ const Footer = () => (
         Oakland, Calif.
       </Text>
       <Link variant="nav" to="/about">
-        About
+        <Text mr={[3, 4]}>About</Text>
       </Link>
       <Link variant="nav" to="/">
-        Projects
+        <Text mr={[3, 4]}>Projects</Text>
       </Link>
-      <a href="mailto:eric@ericrowan.com">Email</a>
+      <a href="mailto:eric@ericrowan.com">
+        <Text>Email</Text>
+      </a>
     </Flex>
   </StyledFooter>
 )

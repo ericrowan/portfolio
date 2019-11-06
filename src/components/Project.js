@@ -7,9 +7,8 @@ import { Flex, Box, Heading, Text } from "rebass"
 // import { motion } from "framer-motion"
 
 const StyledProject = styled(Box)`
-  a,
-  a:hover {
-    text-decoration: none !important;
+  a {
+    text-decoration: none;
   }
 
   article {
@@ -43,8 +42,8 @@ const Project = ({
       <article>
         {children}
         <Box mt={[2, 3]}>
-          <Heading fontSize={[5]}>{title}</Heading>
-          <Text fontSize={[3]}>{description}</Text>
+          <Heading fontSize={[4, 5]}>{title}</Heading>
+          <Text fontSize={[2, 3]}>{description}</Text>
         </Box>
       </article>
     </Link>

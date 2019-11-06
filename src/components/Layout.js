@@ -30,7 +30,7 @@ const Layout = ({ children, title, description }) => (
               transition: all 300ms ease-in-out;
 
               &:hover {
-                text-decoration: underline !important;
+                text-decoration: none;
               }
             }
             p {
