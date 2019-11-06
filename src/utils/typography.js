@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.66,
   headerLineHeight: 1.33,
-  scaleRatio: 3.66,
+  scaleRatio: 3,
   headerFontFamily: [
     "-apple-system",
     "BlinkMacSystemFont",

@@ -20,7 +20,7 @@ const Header = () => (
           Eric Rowan
         </Heading>
       </Link>
-      <Flex fontSize={[1, 2]} ml={[0, "auto"]}>
+      <Flex fontSize={2} ml={[0, "auto"]}>
         <Link variant="nav" to="/about">
           <Text py={[0, 2]} mr={[3, 4]}>
             About

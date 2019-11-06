@@ -33,11 +33,16 @@ const Project = ({
   url,
   ...props
 }) => (
-  <StyledProject className={className} color={color} background={background}>
+  <StyledProject
+    className={className}
+    color={color}
+    background={background}
+    mb={[3, 0]}
+  >
     <Link to={path + url}>
       <article>
         {children}
-        <Box mt={3}>
+        <Box mt={[2, 3]}>
           <Heading fontSize={[5]}>{title}</Heading>
           <Text fontSize={[3]}>{description}</Text>
         </Box>
