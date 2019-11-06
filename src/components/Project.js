@@ -12,10 +12,6 @@ const StyledProject = styled(Box)`
     text-decoration: none !important;
   }
 
-  img {
-    border-radius: 0.75em;
-  }
-
   article {
     transition: all 50ms ease-in-out;
 
@@ -25,7 +21,7 @@ const StyledProject = styled(Box)`
   }
 `
 
-let path = "/work/"
+let path = "/project/"
 
 const Project = ({
   children,
