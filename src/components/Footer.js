@@ -20,7 +20,7 @@ const StyledFooter = styled(Container)`
 const Footer = () => (
   <StyledFooter as="footer" width={sizes.xlarge}>
     <Flex fontSize={[1, 2]}>
-      <Text>&copy; Eric Rowan</Text>
+      <Text mr={["auto", 0]}>&copy; Eric Rowan</Text>
       <Text mx="auto" display={["none", "block"]}>
         Oakland, Calif.
       </Text>
