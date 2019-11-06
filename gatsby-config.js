@@ -3,9 +3,9 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: "Eric Rowan",
-    titleTemplate: "Eric Rowan — %s",
+    titleTemplate: "Eric Rowan / %s",
     description:
-      "I design and build websites, apps, ideas, and other useful tools.",
+      "I design and build products, websites, and other useful tools.",
     url: "https://ericrowan.com", // No trailing slash allowed!
     image: "/images/portrait.jpg", // Path to your image you placed in the 'static' folder
   },
