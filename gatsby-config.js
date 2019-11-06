@@ -5,7 +5,7 @@ module.exports = {
     title: "Eric Rowan",
     titleTemplate: "Eric Rowan / %s",
     description:
-      "I design and build products, websites, and other useful tools.",
+      "I design and build apps, websites, and useful tools for people.",
     url: "https://ericrowan.com", // No trailing slash allowed!
     image: "/images/portrait.jpg", // Path to your image you placed in the 'static' folder
   },
