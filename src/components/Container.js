@@ -32,7 +32,7 @@ const StyledContainer = styled(Box)`
   ${({ text }) =>
     text &&
     css`
-      margin-top: 8vmax;
+      margin-top: 6vmax;
     `}
 `
 
