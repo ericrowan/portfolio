@@ -28,7 +28,7 @@ const Header = () => (
           <Text mr={[3, 4]}>Projects</Text>
         </Link>
         <a href="mailto:eric@ericrowan.com">
-          <Text>Contact</Text>
+          <Text>Email</Text>
         </a>
       </Flex>
     </Flex>

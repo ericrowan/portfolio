@@ -10,7 +10,7 @@ const StyledContainer = styled(Box)`
   // TODO: Add Rebass spacing/breakpoints
   margin: 4vmax auto;
   padding: 0 6vmin;
-  max-width: ${props => (props.full ? "100%" : props.width) || sizes.small};
+  max-width: ${props => (props.full ? "100%" : props.width) || sizes.medium};
   width: 100%;
   grid-template-columns: ${props => props.gridCols || "1fr 1fr"};
   grid-gap: ${props => props.gridGap || "1.5em"};

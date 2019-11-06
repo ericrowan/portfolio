@@ -1,10 +1,10 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: "21px",
-  baseLineHeight: 1.5,
+  baseFontSize: "16px",
+  baseLineHeight: 1.66,
   headerLineHeight: 1.33,
-  scaleRatio: 3,
+  scaleRatio: 3.66,
   headerFontFamily: [
     "-apple-system",
     "BlinkMacSystemFont",

@@ -11,7 +11,7 @@ import { sizes, colors } from "./../utils/variables"
 
 <Container width={sizes.large}>
 
-<Box maxWidth={sizes.xsmall} mx='auto'>
+<Box maxWidth={sizes.small} mx='auto'>
 
 ## I design and build websites, apps, ideas, and other useful tools.
 
@@ -21,10 +21,9 @@ import { sizes, colors } from "./../utils/variables"
 
 <Container text width={sizes.large}>
 <Box sx={{
-  maxWidth: `${sizes.large}`,
   display: 'grid',
-  gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'],
-  gridGap: [5],
+  gridTemplateColumns: ['1fr', '1fr', 'repeat(2, 1fr)'],
+  gridGap: [3, 5],
   alignItems: 'end',
   mx: 'auto',
 }}>
