@@ -21,7 +21,7 @@ const Header = () => (
         </Heading>
       </Link>
       <Flex fontSize={[1, 2]} ml={[0, "auto"]}>
-        <Link variant="nav" to="/info">
+        <Link variant="nav" to="/about">
           <Text mr={[3, 4]}>About</Text>
         </Link>
         <Link variant="nav" to="/">

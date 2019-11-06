@@ -12,6 +12,10 @@ const StyledProject = styled(Box)`
     text-decoration: none !important;
   }
 
+  img {
+    border-radius: 0.75em;
+  }
+
   article {
     transition: all 50ms ease-in-out;
 

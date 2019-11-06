@@ -21,16 +21,16 @@ const Footer = () => (
   <StyledFooter as="footer" width={sizes.xlarge}>
     <Flex fontSize={[1, 2]}>
       <Text>&copy; Eric Rowan</Text>
-      <Box mx="auto" />
-      <Text display={["none", "block"]}>Oakland, Calif.</Text>
-      <Box mx="auto" />
+      <Text mx="auto" display={["none", "block"]}>
+        Oakland, Calif.
+      </Text>
+      <Link variant="nav" to="/about">
+        About
+      </Link>
       <Link variant="nav" to="/">
         Projects
       </Link>
-      <Link variant="nav" to="/info">
-        Info
-      </Link>
-      <a href="mailto:eric@ericrowan.com">Email</a>
+      <a href="mailto:eric@ericrowan.com">Contact</a>
     </Flex>
   </StyledFooter>
 )
