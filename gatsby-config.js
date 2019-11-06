@@ -3,7 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: "Eric Rowan",
-    titleTemplate: "%s | Design & Front-end",
+    titleTemplate: "Eric Rowan — %s",
     description:
       "I design and build websites, apps, ideas, and other useful tools.",
     url: "https://ericrowan.com", // No trailing slash allowed!

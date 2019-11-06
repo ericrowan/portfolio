@@ -1,41 +1,36 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Flex, Box, Heading } from "rebass"
+import { Flex, Box, Heading, Text } from "rebass"
 import Container from "./../components/Container"
 import { sizes } from "../utils/variables"
 
 // TODO: Refactor styles
 const StyledHeader = styled(Container)`
-  margin: 1.5em auto;
-
   a {
     text-decoration: none;
-
-    &:not(:first-of-type) {
-      margin-left: 1.5em;
-    }
   }
 `
 
 const Header = () => (
   <StyledHeader width={sizes.xlarge}>
-    <Flex fontSize={[2, 3]}>
-      <Box>
-        <Link variant="nav" to="/">
-          <strong>Eric Rowan</strong>
-        </Link>
-      </Box>
-      <Box mx="auto"></Box>
-      <Box>
-        <Link variant="nav" to="/">
-          Work
-        </Link>
+    <Flex flexDirection={["column", "row"]} alignItems="baseline">
+      <Link variant="nav" to="/">
+        <Heading as="h1" fontSize={[2, 3]}>
+          Eric Rowan
+        </Heading>
+      </Link>
+      <Flex fontSize={[1, 2]} ml={[0, "auto"]}>
         <Link variant="nav" to="/info">
-          Info
+          <Text mr={[3, 4]}>About</Text>
         </Link>
-        <a href="mailto:eric@ericrowan.com">Email</a>
-      </Box>
+        <Link variant="nav" to="/">
+          <Text mr={[3, 4]}>Projects</Text>
+        </Link>
+        <a href="mailto:eric@ericrowan.com">
+          <Text>Contact</Text>
+        </a>
+      </Flex>
     </Flex>
   </StyledHeader>
 )
