@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Flex, Box, Heading, Text } from "rebass"
+import { Flex, Heading, Text } from "rebass"
 import Container from "./../components/Container"
 import { sizes } from "../utils/variables"
 
