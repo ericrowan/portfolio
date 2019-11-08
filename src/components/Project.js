@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { Flex, Box, Heading, Text } from "rebass"
+import { Box, Heading, Text } from "rebass"
 // import { Global, css } from "@emotion/core"
 // import { motion } from "framer-motion"
 
@@ -15,7 +15,7 @@ const StyledProject = styled(Box)`
     transition: all 50ms ease-in-out;
 
     &:hover {
-      transform: scale(1.033);
+      /* transform: scale(1.033); */
     }
   }
 `
@@ -25,19 +25,12 @@ let path = "/project/"
 const Project = ({
   children,
   className,
-  background,
-  color,
   title,
   description,
   url,
   ...props
 }) => (
-  <StyledProject
-    className={className}
-    color={color}
-    background={background}
-    mb={[3, 0]}
-  >
+  <StyledProject {...props} className={className}>
     <Link to={path + url}>
       <article>
         {children}
