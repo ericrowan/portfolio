@@ -7,7 +7,7 @@ module.exports = {
     description:
       "I design and build useful websites, apps, and tools for everyone.",
     url: "https://ericrowan.com", // No trailing slash allowed!
-    image: "/images/portrait.jpg", // Path to your image you placed in the 'static' folder
+    image: "src/static/images/favicon.svg", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

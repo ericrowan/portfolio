@@ -1,15 +1,14 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { ThemeProvider } from "emotion-theming"
 import { Global, css } from "@emotion/core"
 import theme from "@rebass/preset"
-import { Flex, Box } from "rebass"
+import { Flex } from "rebass"
 import Header from "./Header"
 import Footer from "./Footer"
 import SEO from "./SEO"
 import { sizes, colors } from "./../utils/variables"
 
-const Layout = ({ children, title, description }) => (
+const Layout = ({ children }) => (
   <>
     <SEO />
     <Flex flexDirection="column" minHeight="100vh">
