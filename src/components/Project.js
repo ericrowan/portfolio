@@ -15,7 +15,7 @@ const StyledProject = styled(Box)`
     transition: all 50ms ease-in-out;
 
     &:hover {
-      /* transform: scale(1.033); */
+      transform: scale(1.033);
     }
   }
 `
