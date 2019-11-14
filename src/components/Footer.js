@@ -27,9 +27,9 @@ const Footer = () => (
       <Link variant="nav" to="/about">
         <Text mr={[3, 4]}>About</Text>
       </Link>
-      <Link variant="nav" to="/">
+      {/* <Link variant="nav" to="/">
         <Text mr={[3, 4]}>Projects</Text>
-      </Link>
+      </Link> */}
       <a href="mailto:eric@ericrowan.com">
         <Text>Email</Text>
       </a>
