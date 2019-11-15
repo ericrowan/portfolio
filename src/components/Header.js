@@ -20,23 +20,23 @@ const Header = () => (
   <StyledHeader width={sizes.xlarge}>
     <Flex alignItems="baseline">
       <Link variant="nav" to="/">
-        <Heading as="h1" py={[0, 2]} fontSize={[2, 3]} mb={[1, 0]}>
+        <Heading as="h1" py={2} fontSize={"1em"} mb={[1, 0]}>
           Eric Rowan
         </Heading>
       </Link>
-      <Flex fontSize={2} ml={"auto"}>
+      <Flex fontSize={"0.9em"} ml={"auto"}>
         <Link variant="nav" to="/about">
-          <Text py={[0, 2]} mr={[3, 4]}>
+          <Text py={2} mr={[3, 4]}>
             About
           </Text>
         </Link>
         {/* <Link variant="nav" to="/">
-          <Text py={[0, 2]} mr={[3, 4]}>
+          <Text py={2} mr={[3, 4]}>
             Projects
           </Text>
         </Link> */}
         <a href="mailto:eric@ericrowan.com">
-          <Text py={[0, 2]}>Email</Text>
+          <Text py={2}>Email</Text>
         </a>
       </Flex>
     </Flex>
