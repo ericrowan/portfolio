@@ -9,7 +9,7 @@ import { sizes } from "../utils/variables"
 const StyledContainer = styled(Box)`
   // TODO: Add Rebass spacing/breakpoints
   margin: 4vmax auto;
-  padding: 0 6vmin;
+  padding: 0 6%;
   max-width: ${props => (props.full ? "100%" : props.width) || sizes.text};
   width: 100%;
   grid-template-columns: ${props => props.gridCols || "1fr 1fr"};
