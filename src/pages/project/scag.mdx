@@ -1,0 +1,101 @@
+import Image from "./../../components/Image"
+import { Flex, Box, Heading, Text } from "rebass"
+import { Global, css } from "@emotion/core"
+import { Link } from "gatsby"
+import Container from "./../../components/Container"
+import SEO from "./../../components/SEO"
+import { sizes, colors } from "./../../utils/variables"
+
+<SEO title="Anderson&rsquo;s Scag Parts" />
+
+<Global
+  // TODO: Should be using ThemeProvider
+  styles={css`
+    html {
+      background: ${colors.scag.red};
+    }
+    body,
+    a {
+      color: ${colors.scag.white};
+    }
+  `}
+/>
+
+<Container>
+
+
+# Scag Mower Parts
+
+Front-end development, UI/UX design. Demo project created in conjunction with the design phase to gain confidence in working with new front-end tooling, [Gridsome.js](https://gridsome.org/) and [Tailwind CSS](https://tailwindcss.com/). This was an experiment of moving fast, getting rough design ideas nailed down in Figma and immediately jumping into rapid prototyping.
+
+Using Gridsome and Tailwind together was super liberating, helping avoid managing dozens of screens and user flows in a design program like Figma or Adobe XD. As great as those apps are, just could not compete with this approach of building out a hybrid design/wireframe/prototype experience.
+
+Check out the embedded demo.
+
+</Container>
+
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container width={sizes.xlarge} mx='auto'>
+
+
+<Box height="80vh">
+  <iframe
+    id="inlineFrame"
+    title="Scag Mower Parts demo"
+    width="100%"
+    height="100%"
+    src="https://crosby-scag.netlify.app/"
+    frameBorder="0"
+  ></iframe>
+</Box>
+
+<Box mt='2vh'>
+
+
+[Live demo](https://crosby-scag.netlify.app/) | [Github repo](https://github.com/ericrowan/scag)
+
+</Box>
+
+
+</Container>
+
+
+<!-- /// NEW SECTION \\\ -->
+
+<Container text>
+
+
+## The design
+
+Just a quick mockup created in Figma to get started:
+
+</Container>
+
+
+<Box width={sizes.small} mx='auto'>
+
+
+![Design of website](../../images/scag/mockup.jpg)
+
+</Box>
+
+
+<!-- /// NEXT PROJECT \\\ -->
+
+<Container text>
+
+
+**Next project:**
+
+<Link to='/project/touchstone'>
+
+
+<Heading fontSize={[6, 7, 8]}>Touchstone Pathway</Heading>
+
+</Link>
+
+
+</Container>
+

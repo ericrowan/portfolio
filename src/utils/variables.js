@@ -62,4 +62,13 @@ export const colors = {
            lightblue: "#F4F8FD",
            white: "#FFFFFF",
          },
+         scag: {
+           orange: "#F0780F",
+           red: "#B11E25",
+           black: "#1D1D1D",
+           white: "#FFFFFF",
+           gray100: "#D3D3D3",
+           gray200: "#A7A7A7",
+           gray300: "#1D1D1D",
+         },
        }
