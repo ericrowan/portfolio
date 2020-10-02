@@ -56,4 +56,9 @@ export const colors = {
            white: "#FFFFFF",
            clay: "#826E64",
          },
+         kajabi: {
+           blue: "#0072EF",
+           darkblue: "#202832",
+           lightblue: "#F4F8FD",
+         },
        }

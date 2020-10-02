@@ -22,16 +22,16 @@ const Footer = () => (
     <Flex fontSize={[1, 2]}>
       <Text mr={["auto", 0]}>&copy; Eric Rowan</Text>
       <Text mx="auto" display={["none", "block"]}>
-        Oakland, Calif.
+        #BlackLivesMatter
       </Text>
+      <Link variant="nav" to="/">
+        <Text mr={[3, 4]}>Work</Text>
+      </Link>
       <Link variant="nav" to="/about">
         <Text mr={[3, 4]}>About</Text>
       </Link>
-      {/* <Link variant="nav" to="/">
-        <Text mr={[3, 4]}>Projects</Text>
-      </Link> */}
       <a href="mailto:eric@ericrowan.com">
-        <Text>Email</Text>
+        <Text>Contact &rarr;</Text>
       </a>
     </Flex>
   </StyledFooter>

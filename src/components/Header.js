@@ -25,18 +25,18 @@ const Header = () => (
         </Heading>
       </Link>
       <Flex fontSize={"0.9em"} ml={"auto"}>
+        <Link variant="nav" to="/">
+          <Text py={2} mr={[3, 4]}>
+            Work
+          </Text>
+        </Link>
         <Link variant="nav" to="/about">
           <Text py={2} mr={[3, 4]}>
             About
           </Text>
         </Link>
-        {/* <Link variant="nav" to="/">
-          <Text py={2} mr={[3, 4]}>
-            Projects
-          </Text>
-        </Link> */}
         <a href="mailto:eric@ericrowan.com">
-          <Text py={2}>Email</Text>
+          <Text py={2}>Contact &rarr;</Text>
         </a>
       </Flex>
     </Flex>
