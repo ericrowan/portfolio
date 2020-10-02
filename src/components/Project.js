@@ -7,6 +7,11 @@ import { Box, Heading, Text } from "rebass"
 // import { motion } from "framer-motion"
 
 const StyledProject = styled(Box)`
+  /* Hack to remove white background */
+  .gatsby-resp-image-image {
+    box-shadow: none !important;
+  }
+
   a {
     text-decoration: none;
   }
