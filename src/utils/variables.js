@@ -11,6 +11,8 @@ export const colors = {
          eric: {
            black: "#121212",
            white: "#FFFFFF",
+           lightgray: "#999",
+           darkgray: "#333",
          },
          changelog: {
            green: "#59B287",
