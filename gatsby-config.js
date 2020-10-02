@@ -16,6 +16,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-images`],
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         plugins: [`gatsby-remark-images`],
