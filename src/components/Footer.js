@@ -7,6 +7,12 @@ import { sizes } from "../utils/variables"
 
 const StyledFooter = styled(Container)`
   margin: 12vmax auto 4vmax;
+  opacity: 0.5;
+
+  &:hover nav {
+    opacity: 1 !important;
+    transition: all 100ms ease-in-out;
+  }
 
   a {
     text-decoration: none;
@@ -19,7 +25,7 @@ const StyledFooter = styled(Container)`
 
 const Footer = () => (
   <StyledFooter as="footer" width={sizes.xlarge}>
-    <Flex fontSize={[1, 2]} opacity="0.33">
+    <Flex fontSize={[1, 2]}>
       <Text mr={["auto", 0]}>&copy; Eric Rowan</Text>
       <Text mx="auto" display={["none", "block"]}>
         #BlackLivesMatter
@@ -31,7 +37,7 @@ const Footer = () => (
         <Text mr={[3, 4]}>About</Text>
       </Link>
       <a href="mailto:eric@ericrowan.com">
-        <Text>Contact &rarr;</Text>
+        <Text>Contact /</Text>
       </a>
     </Flex>
   </StyledFooter>
